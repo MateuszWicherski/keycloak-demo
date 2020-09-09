@@ -1,0 +1,10 @@
+server:
+  port: 9090
+
+keycloak:
+  realm: 'heroes'
+  auth-server-url: 'http://localhost:8000/auth'
+  ssl-required: 'external'
+  resource: 'heroes-backend'
+  use-resource-role-mappings: true
+  bearer-only: true
